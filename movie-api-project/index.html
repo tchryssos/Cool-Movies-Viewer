@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cool Movies</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1> <a href="index.html" style="text-decoration: none; color: black;">Movie Search</a> </h1>
+      </header>
+      <input type="text" value="" style="font-family:'Roboto'"id="movie_title" placeholder="Movie Title">
+      <button type="button" class="btn btn-info btn-sm" name="button" style="font-family:'Roboto'">Get Movie!</button>
+      <p id="app-description">Enter the name of a movie, then click the button to see movie info and a gif that is probably from that movie.</p>
+      <div class="result">
+        <h4 id="movieTitle" class="movieField"></h4>
+        <img id="movieGif" src="" class="movieField">
+        <img id="itunes-preview" src="">
+        <h4 id="movieYear" class="movieField"></h4>
+        <div id="plot-div" class="col-md-6 col-md-offset-3">
+          <p id="moviePlot" class="movieField"></p>
+        </div>
+        <div id="button-div" class="col-md-6 col-md-offset-3">
+          <button class="btn btn-info btn-sm" id="itunes-button"><a id="itunes-link" href="" style="text-decoration: none; font-family: 'Roboto'; color: white;" target="_blank">View In iTunes</a></button>
+        </div>
+        <h4 id="movieError" class="movieField col-md-6 col-md-offset-3"></h4>
+      </div>
+  </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+  </body>
+</html>
